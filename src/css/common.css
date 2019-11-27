@@ -1,0 +1,34 @@
+body
+{
+background-color:#fcf7f7;
+}
+
+button.main
+{
+	color:#64d962;
+	border:#4894db solid 0.3vw; 
+	background-color:transparent;
+	font-weight:900;
+	font-size:x-large;
+	transition:border 0.5s;
+	border-radius:1vw;
+	width:22vw;
+}
+
+button.main:hover
+{
+	border:#ebdada solid 0.3vw; 
+}
+
+ul.main
+{
+	list-style-type:none;
+}
+
+
+div.maindiv
+{
+		font-size:x-large;
+		color:black;
+		font-size:large;
+}

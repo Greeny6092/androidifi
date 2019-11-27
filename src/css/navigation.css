@@ -1,0 +1,31 @@
+div.nav
+{
+	top:0vh;
+	background-color:#fcf7f7;
+	
+}
+
+hr.nav
+{
+	position:relative;
+	top:1vh;
+	height:1.3vh;
+	color:#ebdada;
+	background-color:#ebdada;
+	border:transparent solid 0px;
+}
+
+button.nav
+{
+	color:#4894db;
+	border:transparent solid 0.3vw; 
+	background-color:transparent;
+	font-weight:900;
+	font-size:x-large;
+	transition:border 0.5s;
+}
+
+button.nav:hover
+{
+	border:#ebdada solid 0.3vw; 
+}

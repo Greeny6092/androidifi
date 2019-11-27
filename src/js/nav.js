@@ -1,0 +1,1 @@
+document.write('<center><span  style="float:left"><a href="" style="color:#4894db;text-decoration:none;font-size:x-large;font-weight:900;padding-top:1px;">#GETANDROIDIFIED</a></span><span  style="float:right"><button class="nav">HOME</button><button class="nav">ABOUT US</button></span></center>	<br><br><hr class="nav">');
