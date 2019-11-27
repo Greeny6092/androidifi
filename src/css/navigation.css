@@ -2,7 +2,7 @@ div.nav
 {
 	top:0vh;
 	background-color:#fcf7f7;
-	
+	transition:background-color 2s;
 }
 
 hr.nav
@@ -17,7 +17,7 @@ hr.nav
 
 button.nav
 {
-	color:#4894db;
+	color:#4285f4;
 	border:transparent solid 0.3vw; 
 	background-color:transparent;
 	font-weight:900;

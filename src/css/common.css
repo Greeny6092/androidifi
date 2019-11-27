@@ -1,12 +1,18 @@
+html
+{
+scroll-behavior: smooth;	
+}
+
 body
 {
 background-color:#fcf7f7;
+transition:background-color 2s;
 }
 
 button.main
 {
-	color:#64d962;
-	border:#4894db solid 0.3vw; 
+	color:#3ddc84;
+	border:#4285f4 solid 0.3vw; 
 	background-color:transparent;
 	font-weight:900;
 	font-size:x-large;
@@ -31,4 +37,5 @@ div.maindiv
 		font-size:x-large;
 		color:black;
 		font-size:large;
+		transition:color 2s;
 }
