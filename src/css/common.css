@@ -15,6 +15,7 @@ button.main
 	border:#4285f4 solid 0.3vw; 
 	background-color:transparent;
 	font-weight:900;
+	font-family:'Open Sans', sans-serif;
 	font-size:x-large;
 	transition:border 0.5s;
 	border-radius:1vw;
@@ -26,9 +27,10 @@ button.main:hover
 	border:#ebdada solid 0.3vw; 
 }
 
-ul.main
+ul.mainul
 {
 	list-style-type:none;
+	font-family:'Open Sans', sans-serif;
 }
 
 
@@ -38,4 +40,6 @@ div.maindiv
 		color:black;
 		font-size:large;
 		transition:color 2s;
+		font-family:'Open Sans', sans-serif;
+		font-weight:900;
 }

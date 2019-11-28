@@ -3,13 +3,14 @@
 	<title>Androidifi</title>
 	<link rel="stylesheet" type="text/css" href="src/css/navigation.css">
 	<link rel="stylesheet" type="text/css" href="src/css/common.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <!--<script type="text/javascript" rel="javascript" src="src/js/headtag.js"></script>-->
 <body>
 <!--<script type="text/javascript" rel="javascript" src="src/js/nav.js"></script>-->
 	<div class="nav" style="position:sticky;z-index:2;background-color:#fcf7f7;">
 		<center>
-			<span  style="float:left"><a href="" style="color:#4894db;text-decoration:none;font-size:x-large;font-weight:900;padding-top:1px;">#GETANDROIDIFIED</a></span>
+			<span  style="float:left"><a href="" style="color:#4894db;text-decoration:none;font-size:x-large;font-weight:900;padding-top:1px;font-family:'Open Sans', sans-serif;">#GETANDROIDIFIED</a></span>
 			<span  style="float:right">
 				<a href="#home"><button class="nav">HOME</button></a>
 				<a href="#aboutus"><button class="nav">ABOUT US</button></a>
@@ -20,8 +21,8 @@
 	</div>
 	<div style="position:relative;top:7vh;" id="home" class="maindiv"> 
 		<center>
-			<img src="images/logo/androidifi_logo.jpg" style="width:30vw;height:40vh;" name="logo">
-			<p style="font-size:30pt;margin:0px;letter-spacing:1.1vw;">ANDROIDIFI</p>
+			<img src="images/logo/androidifi_logo.png" style="width:30vw;height:40vh;" name="logo">
+			<p style="font-size:30pt;margin:0px;letter-spacing:1.1vw;font-weight:900;">androidifi</p>
 		</center>
 	</div>
 	<div style="position:relative;top:15vh;">
@@ -71,11 +72,11 @@
 			<li>Set of graphic designs, illustrations & concepts for corporate material</li>
 		</ul>
 	</div>
-	<div style="position:fixed;left:80vw;top:85vh;float:right;">
+	<div style="position:fixed;left:80vw;top:90vh;float:right;">
 		<table>
 			<tr>
 				<td><img src="\./androidifi/images/icon/darktheme.svg" onclick="invertcolor();" style="width:6vw;height:6vh;" name="darktheme"></td>
-				<td onclick="invertcolor();"  class="maindiv">DARK THEME</td>
+				<td onclick="invertcolor();"  style="color:#4894db;font-weight:900;font-family:'Open Sans', sans-serif;" class="maindiv" id="darktheme">DARK THEME</td>
 			</tr>
 		</table>
 	</div>
@@ -100,7 +101,8 @@
 					maindiv[i].style.color="white";
 				}
 				nav.style.backgroundColor="black";
-				darktheme.src="images/icon/darkthemebv.svg"
+				//darktheme.src="images/icon/darkthemebv.png"
+				darktheme.style.filter="invert(1)";
 			}
 			else
 			{
@@ -113,7 +115,9 @@
 					maindiv[i].style.color="black";
 				}
 				nav.style.backgroundColor="#fcf7f7";
-				darktheme.src="images/icon/darktheme.svg"
+				//darktheme.src="images/icon/darktheme.svg"
+				darktheme.style.filter="invert(0)";
+				document.getElementById("darktheme").style.color="#4894db";
 			}
 		}
 	</script>

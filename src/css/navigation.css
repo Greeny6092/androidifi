@@ -21,8 +21,10 @@ button.nav
 	border:transparent solid 0.3vw; 
 	background-color:transparent;
 	font-weight:900;
+	font-family:'Open Sans', sans-serif;
 	font-size:x-large;
 	transition:border 0.5s;
+	border-radius:1vw;
 }
 
 button.nav:hover
