@@ -1,0 +1,125 @@
+<html>
+<head>
+	<title>Androidifi</title>
+	<link rel="stylesheet" type="text/css" href="src/css/navigation.css">
+	<link rel="stylesheet" type="text/css" href="src/css/common.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<!--<script type="text/javascript" rel="javascript" src="src/js/headtag.js"></script>-->
+<body>
+<!--<script type="text/javascript" rel="javascript" src="src/js/nav.js"></script>-->
+	<div class="nav" style="position:sticky;z-index:2;background-color:#fcf7f7;">
+		<center>
+			<span  style="float:left"><a href="" style="color:#4894db;text-decoration:none;font-size:x-large;font-weight:900;padding-top:1px;font-family:'Open Sans', sans-serif;">#GETANDROIDIFIED</a></span>
+			<span  style="float:right">
+				<a href="#home"><button class="nav">HOME</button></a>
+				<a href="#aboutus"><button class="nav">ABOUT US</button></a>
+			</span>
+		</center>
+		<br><br>
+		<hr class="nav">
+	</div>
+	<div style="position:relative;top:7vh;height:100%;" id="home" class="maindiv"> 
+		<center>
+			<img src="images/logo/androidifi_logo.png" style="width:30vw;height:40vh;" name="logo">
+			<p style="font-size:30pt;margin:0px;letter-spacing:1.1vw;font-weight:900;">androidifi</p>
+		</center>
+	<!--</div>
+	<div style="position:relative;top:15vh;">-->
+	<center>
+	<table cellpadding="10" cellspacing="20" style="position:relative;top:5vh;">
+		<tr>
+			<td class="main"><a href="#rumorride"><button class="main">Rumor Ride</button></a></td>
+			<td class="main"><a href="#reviewandspecs"><button class="main">Reviews & Specs</button></a></td>
+			<td class="main"><a href="#everything_android"><button class="main">Everything Android</button></a></td>
+		</tr>
+	</table>
+	</center>
+	</div>
+	<br>
+	<div class="maindiv" style="position:relative;top:10vh;color:black;" id="rumorride">
+		<h2 style="font-size:x-large;color:#4894db;">RUMOR RIDE</h2>
+		<ul class="mainul">
+			<li>New Logo Identity</li>
+			<li>Promotional Material Templates</li>
+			<li>Set of graphic designs, illustrations & concepts for corporate material</li>
+		</ul>
+		<br>
+	</div>
+	<div class="maindiv" style="position:relative;top:10vh;" id="reviewandspecs">
+		<h2 style="font-size:x-large;color:#4894db;">REVIEWS & SPECS</h2>
+		<ul class="mainul">
+			<li>New Logo Identity</li>
+			<li>Promotional Material Templates</li>
+			<li>Set of graphic designs, illustrations & concepts for corporate material</li>
+		</ul>
+		<br>
+	</div>
+	<div class="maindiv" style="position:relative;top:10vh;" id="everything_android">
+		<h2 style="font-size:x-large;color:#4894db;">EVERYTHING ANDROID</h2>
+		<ul class="mainul">
+			<li>New Logo Identity</li>
+			<li>Promotional Material Templates</li>
+			<li>Set of graphic designs, illustrations & concepts for corporate material</li>
+		</ul>
+		<br>
+	</div>
+	<div class="maindiv" style="position:relative;top:10vh;" id="aboutus">
+		<h2 style="font-size:x-large;color:#4894db;">ABOUT US</h2>
+		<ul class="mainul">
+			<li>New Logo Identity</li>
+			<li>Promotional Material Templates</li>
+			<li>Set of graphic designs, illustrations & concepts for corporate material</li>
+		</ul>
+	</div>
+	<div style="position:fixed;left:80vw;top:90vh;float:right;">
+		<table>
+			<tr>
+				<td><img src="images/icon/darktheme.svg" onclick="invertcolor();" style="width:6vw;height:6vh;" name="darktheme"></td>
+				<td onclick="invertcolor();"  style="color:#4894db;font-weight:900;font-family:'Open Sans', sans-serif;" class="maindiv" id="darktheme">DARK THEME</td>
+			</tr>
+		</table>
+	</div>
+	<script>
+	function invertcolor()
+		{
+			//alert("invertcolor");
+			var body=document.getElementsByTagName("body")[0];
+			var darktheme=document.getElementsByName("darktheme")[0];
+			var maindiv=document.getElementsByClassName("maindiv");
+			var nav=document.getElementsByClassName("nav")[0];
+			let i;
+			console.log(body);
+			if(body.style.backgroundColor!="black")
+			{
+				//alert("if");
+				body.style.backgroundColor="black";
+				console.log(maindiv.length);
+				for(i=0;i<maindiv.length;i++)
+				{
+					console.log(maindiv[i].style.color);
+					maindiv[i].style.color="white";
+				}
+				nav.style.backgroundColor="black";
+				//darktheme.src="images/icon/darkthemebv.png"
+				darktheme.style.filter="invert(1)";
+			}
+			else
+			{
+				//alert("else");
+				body.style.backgroundColor="#fcf7f7";
+				console.log(maindiv.length);
+				for(i=0;i<maindiv.length;i++)
+				{
+					console.log(maindiv[i].style.color);
+					maindiv[i].style.color="black";
+				}
+				nav.style.backgroundColor="#fcf7f7";
+				//darktheme.src="images/icon/darktheme.svg"
+				darktheme.style.filter="invert(0)";
+				document.getElementById("darktheme").style.color="#4894db";
+			}
+		}
+	</script>
+</body>
+</html>
